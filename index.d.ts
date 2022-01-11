@@ -42,6 +42,11 @@ declare module '@twotalltotems/react-native-otp-input' {
      */
     onCodeChanged?: (code: string) => void;
     /**
+     *Callback function ,
+     *Trigger on long pressed on input 
+     */
+    onLongPress?: () => void
+    /**
      * If keyboard is automatically brought up when OTP is loaded.
      */
     autoFocusOnLoad?: boolean;
