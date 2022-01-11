@@ -229,6 +229,7 @@ export default class OTPInputView extends Component<InputProps, OTPInputViewStat
             >
                 <TouchableWithoutFeedback
                     style={{ width: '100%', height: '100%' }}
+                    onLongPress={this.props.onLongPress}
                     onPress={() => {
                         if (!clearInputs) {
                             let filledPinCount = digits.filter((digit) => { return (digit !== null && digit !== undefined) }).length
